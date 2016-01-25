@@ -1,10 +1,10 @@
-﻿using ILuffy.I18N;
+﻿using ILuffy.Halo.I18N;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ILuffy.Core
+namespace ILuffy.Halo
 {
     public abstract class InstanceInfo : BaseProperties
     {

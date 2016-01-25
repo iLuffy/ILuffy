@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ILuffy.Core.Extention
+namespace ILuffy.Halo
 {
     public static class StringExtension
     {

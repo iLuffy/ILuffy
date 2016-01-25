@@ -6,8 +6,8 @@
     <ProjectGuid>{472CA62D-6499-43F0-B316-D4DE937C0E0E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ILuffy.Printer.Test</RootNamespace>
-    <AssemblyName>ILuffy.Printer.Test</AssemblyName>
+    <RootNamespace>ILuffy.Halo.Printer.Test</RootNamespace>
+    <AssemblyName>ILuffy.Halo.Printer.Test</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -63,17 +63,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ILuffy.Core\ILuffy.Core.csproj">
+    <ProjectReference Include="..\ILuffy.Core\ILuffy.Halo.csproj">
       <Project>{49ec0a7e-5fa6-43ba-9ddc-97c6891e7928}</Project>
-      <Name>ILuffy.Core</Name>
+      <Name>ILuffy.Halo</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ILuffy.I18N\ILuffy.I18N.csproj">
+    <ProjectReference Include="..\ILuffy.I18N\ILuffy.Halo.I18N.csproj">
       <Project>{6992dab3-14e7-4a69-b6bf-2a47fa8e4359}</Project>
-      <Name>ILuffy.I18N</Name>
+      <Name>ILuffy.Halo.I18N</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ILuffy.Printer\ILuffy.Printer.csproj">
+    <ProjectReference Include="..\ILuffy.Printer\ILuffy.Halo.Printer.csproj">
       <Project>{3319320b-ba12-40d4-bf14-d69b3f6b372a}</Project>
-      <Name>ILuffy.Printer</Name>
+      <Name>ILuffy.Halo.Printer</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

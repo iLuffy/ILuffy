@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ILuffy.Core
+namespace ILuffy.Halo
 {
     public class Nullable<T>
     {

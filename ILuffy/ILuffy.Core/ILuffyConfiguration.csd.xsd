@@ -8,17 +8,17 @@
 </auto-generated>
 -->
 <xs:schema xmlns:tns="urn:ILuffy.Core" elementFormDefault="qualified" targetNamespace="urn:ILuffy.Core" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-	<xs:element name="iLuffyConfig" type="tns:ILuffy.Core.ILuffyConfigCT" />
-	<xs:complexType name="ILuffy.Core.ILuffyConfigCT">
+	<xs:element name="iLuffyConfig" type="tns:ILuffy.Halo.ILuffyConfigCT" />
+	<xs:complexType name="ILuffy.Halo.ILuffyConfigCT">
 		<xs:choice minOccurs="0" maxOccurs="unbounded">
-			<xs:element minOccurs="0" name="instances" type="tns:ILuffy.Core.InstanceCollectionCT">
+			<xs:element minOccurs="0" name="instances" type="tns:ILuffy.Halo.InstanceCollectionCT">
 				<xs:annotation>
 					<xs:documentation>The Instances.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:choice>
 	</xs:complexType>
-	<xs:complexType name="ILuffy.Core.InstanceElementCT">
+	<xs:complexType name="ILuffy.Halo.InstanceElementCT">
 		<xs:attribute name="name" use="required" type="xs:string">
 			<xs:annotation>
 				<xs:documentation>The Name.</xs:documentation>
@@ -35,9 +35,9 @@
 			</xs:annotation>
 		</xs:attribute>
 	</xs:complexType>
-	<xs:complexType name="ILuffy.Core.InstanceCollectionCT">
+	<xs:complexType name="ILuffy.Halo.InstanceCollectionCT">
 		<xs:choice minOccurs="0" maxOccurs="unbounded">
-			<xs:element minOccurs="0" maxOccurs="unbounded" name="instanceElement" type="tns:ILuffy.Core.InstanceElementCT">
+			<xs:element minOccurs="0" maxOccurs="unbounded" name="instanceElement" type="tns:ILuffy.Halo.InstanceElementCT">
 				<xs:annotation>
 					<xs:documentation>The InstanceElement Configuration Element.</xs:documentation>
 				</xs:annotation>

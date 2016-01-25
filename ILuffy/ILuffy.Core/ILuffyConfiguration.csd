@@ -11,7 +11,7 @@
     <externalType name="TimeSpan" namespace="System" />
   </typeDefinitions>
   <configurationElements>
-    <configurationSection name="ILuffyConfig" namespace="ILuffy.Core" codeGenOptions="Singleton, XmlnsProperty" xmlSectionName="iLuffyConfig">
+    <configurationSection name="ILuffyConfig" namespace="ILuffy.Halo" codeGenOptions="Singleton, XmlnsProperty" xmlSectionName="iLuffyConfig">
       <elementProperties>
         <elementProperty name="Instances" isRequired="false" isKey="false" isDefaultCollection="false" xmlName="instances" isReadOnly="false">
           <type>
@@ -20,7 +20,7 @@
         </elementProperty>
       </elementProperties>
     </configurationSection>
-    <configurationElement name="InstanceElement" namespace="ILuffy.Core">
+    <configurationElement name="InstanceElement" namespace="ILuffy.Halo">
       <attributeProperties>
         <attributeProperty name="Name" isRequired="true" isKey="true" isDefaultCollection="false" xmlName="name" isReadOnly="false">
           <type>
@@ -39,7 +39,7 @@
         </attributeProperty>
       </attributeProperties>
     </configurationElement>
-    <configurationElementCollection name="InstanceCollection" namespace="ILuffy.Core" xmlItemName="instanceElement" codeGenOptions="Indexer, AddMethod, RemoveMethod, GetItemMethods">
+    <configurationElementCollection name="InstanceCollection" namespace="ILuffy.Halo" xmlItemName="instanceElement" codeGenOptions="Indexer, AddMethod, RemoveMethod, GetItemMethods">
       <itemType>
         <configurationElementMoniker name="/dee4848e-76d3-4a77-b8d8-e6706f84d49f/InstanceElement" />
       </itemType>

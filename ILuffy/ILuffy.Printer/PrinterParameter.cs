@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ILuffy.Printer
+namespace ILuffy.Halo.Printer
 {
     /// <summary>
     /// Parameter

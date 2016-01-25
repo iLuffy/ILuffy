@@ -9,7 +9,7 @@ using System.Web.Script.Serialization;
 using System.Xml;
 using System.Xml.Serialization;
 
-namespace ILuffy.Core
+namespace ILuffy.Halo
 {
     /// <summary>
     /// Serializer Helper

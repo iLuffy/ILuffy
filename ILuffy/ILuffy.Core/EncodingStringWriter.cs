@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace ILuffy.Core
+namespace ILuffy.Halo
 {
     /// <summary>
     /// 继承StringWriter，并且重写Encoding，使StringWriter可以扩展Encoding方法。
