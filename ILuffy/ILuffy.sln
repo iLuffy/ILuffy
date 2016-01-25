@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ILuffy.Halo", "ILuffy.Core\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ILuffy.Halo.I18N", "ILuffy.I18N\ILuffy.Halo.I18N.csproj", "{6992DAB3-14E7-4A69-B6BF-2A47FA8E4359}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ILuffy.Printer.Test", "ILuffy.Printer.Test\ILuffy.Printer.Test.csproj", "{472CA62D-6499-43F0-B316-D4DE937C0E0E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ILuffy.Halo.Printer.Test", "ILuffy.Printer.Test\ILuffy.Halo.Printer.Test.csproj", "{472CA62D-6499-43F0-B316-D4DE937C0E0E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
