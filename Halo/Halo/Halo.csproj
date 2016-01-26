@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseProperties.cs" />
+    <Compile Include="CompilerServices\CallerMemberNameAttribute.cs" />
     <Compile Include="EncodingStringWriter.cs" />
     <Compile Include="Extention\InstanceInfoExtension.cs" />
     <Compile Include="Extention\StringExtention.cs" />
@@ -60,12 +61,6 @@
     <Compile Include="Nullable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SerializerHelper.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ILuffy.Halo.I18N\HaloI18N.csproj">
-      <Project>{6992dab3-14e7-4a69-b6bf-2a47fa8e4359}</Project>
-      <Name>HaloI18N</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -87,6 +82,13 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HaloI18N\HaloI18N.csproj">
+      <Project>{6992dab3-14e7-4a69-b6bf-2a47fa8e4359}</Project>
+      <Name>HaloI18N</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

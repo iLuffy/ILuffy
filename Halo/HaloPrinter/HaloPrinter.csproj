@@ -50,13 +50,13 @@
     <Compile Include="USB\USBPrinter.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ILuffy.Halo\Halo.csproj">
-      <Project>{49ec0a7e-5fa6-43ba-9ddc-97c6891e7928}</Project>
-      <Name>Halo</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ILuffy.Halo.I18N\HaloI18N.csproj">
+    <ProjectReference Include="..\HaloI18N\HaloI18N.csproj">
       <Project>{6992dab3-14e7-4a69-b6bf-2a47fa8e4359}</Project>
       <Name>HaloI18N</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Halo\Halo.csproj">
+      <Project>{49ec0a7e-5fa6-43ba-9ddc-97c6891e7928}</Project>
+      <Name>Halo</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

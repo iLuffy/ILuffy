@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Halo", "Halo\Halo.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaloI18N", "HaloI18N\HaloI18N.csproj", "{6992DAB3-14E7-4A69-B6BF-2A47FA8E4359}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaloPrinterTest", "HaloPrinterTest\HaloPrinterTest.csproj", "{472CA62D-6499-43F0-B316-D4DE937C0E0E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaloTest", "HaloPrinterTest\HaloTest.csproj", "{472CA62D-6499-43F0-B316-D4DE937C0E0E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaloWPFLib", "HaloWPFLib\HaloWPFLib.csproj", "{4FDA4515-91AD-4554-9C71-2528D529D3B4}"
 EndProject
