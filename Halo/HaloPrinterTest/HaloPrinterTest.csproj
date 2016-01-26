@@ -63,15 +63,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ILuffy.Halo\Halo.csproj">
+    <ProjectReference Include="..\Halo\Halo.csproj">
       <Project>{49ec0a7e-5fa6-43ba-9ddc-97c6891e7928}</Project>
       <Name>Halo</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ILuffy.Halo.I18N\HaloI18N.csproj">
+    <ProjectReference Include="..\HaloI18N\HaloI18N.csproj">
       <Project>{6992dab3-14e7-4a69-b6bf-2a47fa8e4359}</Project>
       <Name>HaloI18N</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ILuffy.Halo.Printer\HaloPrinter.csproj">
+    <ProjectReference Include="..\HaloPrinter\HaloPrinter.csproj">
       <Project>{3319320b-ba12-40d4-bf14-d69b3f6b372a}</Project>
       <Name>HaloPrinter</Name>
     </ProjectReference>
