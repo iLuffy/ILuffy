@@ -13,6 +13,23 @@ namespace ILuffy.Halo.Windows.ViewModel
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
+        //http://www.codeproject.com/Articles/15822/Bind-Better-with-INotifyPropertyChanged
+        //Check Property Changed
+        protected bool CheckPropertyChanged<T>(ref T oldValue, T newValue, [CallerMemberName] String propertyName="")
+        {
+            if ((oldValue == null && newValue != null) || 
+                (oldValue != null && (!oldValue.Equals(newValue))))
+            {
+                oldValue = newValue;
+
+                OnPropertyChanged(propertyName);
+
+                return true;
+            }
+
+            return false;
+        }
+
         protected void OnPropertyChanged([CallerMemberName] String propertyName="")
         {
             var handler = PropertyChanged;
