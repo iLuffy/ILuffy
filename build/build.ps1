@@ -29,7 +29,7 @@ Function Clean-Directory([string]$folder) {
 
 task default -depends Release
 
-task Clean { 
+task Clean -depends CleanMSBuild { 
     Clean-Directory $build_artifacts_dir
 	Clean-Directory $nuget_package_dir
 }
@@ -41,7 +41,7 @@ task Init -depends Clean {
 
 task CleanMSBuild {
 
-    #exec { msbuild "$sln_file" /t:clean /p:Configuration=Release }
+    exec { msbuild "$sln_file" /t:clean /p:Configuration=Release /v:quiet }
 }
 
 task Compile35 -depends CleanMSBuild {
