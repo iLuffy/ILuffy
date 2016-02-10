@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace ILuffy.Halo
 {
@@ -26,47 +23,47 @@ namespace ILuffy.Halo
             //Cache<WeightCalculateMethod>.Get = typeof(StringExtension).GetMethod("GetBoolean").CreateDelegate<Func<string, bool>>();
         }
 
-        static string GetString(string value)
+        private static string GetString(string value)
         {
             return value;
         }
 
-        static bool GetBoolean(string value)
+        private static bool GetBoolean(string value)
         {
             return bool.Parse(value);
         }
 
-        static string GetBooleanAsString(bool value)
+        private static string GetBooleanAsString(bool value)
         {
             return value.ToString();
         }
 
-        static double GetDouble(string value)
+        private static double GetDouble(string value)
         {
             return double.Parse(value, System.Globalization.NumberFormatInfo.InvariantInfo);
         }
 
-        static string GetDoubleAsString(double value)
+        private static string GetDoubleAsString(double value)
         {
             return value.ToString(System.Globalization.NumberFormatInfo.InvariantInfo);
         }
 
-        static int GetInt(string value)
+        private static int GetInt(string value)
         {
             return int.Parse(value, System.Globalization.NumberFormatInfo.InvariantInfo);
         }
 
-        static string GetIntAsString(int value)
+        private static string GetIntAsString(int value)
         {
             return value.ToString(System.Globalization.NumberFormatInfo.InvariantInfo);
         }
 
-        static T GetEnum<T>(string value)
+        private static T GetEnum<T>(string value)
         {
             return (T)Enum.Parse(typeof(T), value);
         }
 
-        static string GetEnumAsString<T>(T value)
+        private static string GetEnumAsString<T>(T value)
         {
             return Enum.Format(typeof(T), value, "F");
         }

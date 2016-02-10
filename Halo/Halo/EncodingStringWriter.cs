@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Text;
 
 namespace ILuffy.Halo
@@ -11,7 +9,8 @@ namespace ILuffy.Halo
     /// </summary>
     internal class EncodingStringWriter : StringWriter
     {
-        Encoding encoding;
+        private Encoding encoding;
+
         /// <summary>
         /// StringWriter的Encoding方法
         /// </summary>

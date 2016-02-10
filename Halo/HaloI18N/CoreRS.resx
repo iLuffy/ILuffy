@@ -123,6 +123,12 @@
   <data name="EntryNotFound" xml:space="preserve">
     <value>The entry {0} is not found.</value>
   </data>
+  <data name="FormatResourceKeyFailed" xml:space="preserve">
+    <value>Format key:{0} with parameters:{1} failed:{2}</value>
+  </data>
+  <data name="ResourceKeyFormat" xml:space="preserve">
+    <value>Resource Key:{0}, parameters:</value>
+  </data>
   <data name="TypeFullNameIsEmpty" xml:space="preserve">
     <value>The type full name of {0} is empty.</value>
   </data>

@@ -105,6 +105,24 @@ namespace ILuffy.Halo.I18N {
         }
         
         /// <summary>
+        /// Looks up a localized string similar to 'Format key:{0} with parameters:{1} failed:{2}'.
+        /// </summary>
+        public static string FormatResourceKeyFailed {
+            get {
+                return ResourceManager.GetString(ResourceNames.FormatResourceKeyFailed, _resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Looks up a localized string similar to 'Resource Key:{0}, parameters:'.
+        /// </summary>
+        public static string ResourceKeyFormat {
+            get {
+                return ResourceManager.GetString(ResourceNames.ResourceKeyFormat, _resourceCulture);
+            }
+        }
+        
+        /// <summary>
         /// Looks up a localized string similar to 'The type full name of {0} is empty.'.
         /// </summary>
         public static string TypeFullNameIsEmpty {
@@ -132,6 +150,26 @@ namespace ILuffy.Halo.I18N {
         }
         
         /// <summary>
+        /// Formats a localized string similar to 'Format key:{0} with parameters:{1} failed:{2}'.
+        /// </summary>
+        /// <param name="arg0">An object (0) to format.</param>
+        /// <param name="arg1">An object (1) to format.</param>
+        /// <param name="arg2">An object (2) to format.</param>
+        /// <returns>A copy of format string in which the format items have been replaced by the String equivalent of the corresponding instances of Object in arguments.</returns>
+        public static string FormatResourceKeyFailedFormat(object arg0, object arg1, object arg2) {
+            return string.Format(_resourceCulture, FormatResourceKeyFailed, arg0, arg1, arg2);
+        }
+        
+        /// <summary>
+        /// Formats a localized string similar to 'Resource Key:{0}, parameters:'.
+        /// </summary>
+        /// <param name="arg0">An object (0) to format.</param>
+        /// <returns>A copy of format string in which the format items have been replaced by the String equivalent of the corresponding instances of Object in arguments.</returns>
+        public static string ResourceKeyFormatFormat(object arg0) {
+            return string.Format(_resourceCulture, ResourceKeyFormat, arg0);
+        }
+        
+        /// <summary>
         /// Formats a localized string similar to 'The type full name of {0} is empty.'.
         /// </summary>
         /// <param name="arg0">An object (0) to format.</param>
@@ -154,6 +192,16 @@ namespace ILuffy.Halo.I18N {
             /// Stores the resource name 'EntryNotFound'.
             /// </summary>
             public const string EntryNotFound = "EntryNotFound";
+            
+            /// <summary>
+            /// Stores the resource name 'FormatResourceKeyFailed'.
+            /// </summary>
+            public const string FormatResourceKeyFailed = "FormatResourceKeyFailed";
+            
+            /// <summary>
+            /// Stores the resource name 'ResourceKeyFormat'.
+            /// </summary>
+            public const string ResourceKeyFormat = "ResourceKeyFormat";
             
             /// <summary>
             /// Stores the resource name 'TypeFullNameIsEmpty'.

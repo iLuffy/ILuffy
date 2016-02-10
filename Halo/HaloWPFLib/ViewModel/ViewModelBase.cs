@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Reflection;
 using System.Runtime.CompilerServices;
-using System.Text;
 
 namespace ILuffy.Halo.Windows.ViewModel
 {
@@ -15,9 +10,9 @@ namespace ILuffy.Halo.Windows.ViewModel
 
         //http://www.codeproject.com/Articles/15822/Bind-Better-with-INotifyPropertyChanged
         //Check Property Changed
-        protected bool CheckPropertyChanged<T>(ref T oldValue, T newValue, [CallerMemberName] String propertyName="")
+        protected bool CheckPropertyChanged<T>(ref T oldValue, T newValue, [CallerMemberName] String propertyName = "")
         {
-            if ((oldValue == null && newValue != null) || 
+            if ((oldValue == null && newValue != null) ||
                 (oldValue != null && (!oldValue.Equals(newValue))))
             {
                 oldValue = newValue;
@@ -30,7 +25,7 @@ namespace ILuffy.Halo.Windows.ViewModel
             return false;
         }
 
-        protected void OnPropertyChanged([CallerMemberName] String propertyName="")
+        protected void OnPropertyChanged([CallerMemberName] String propertyName = "")
         {
             var handler = PropertyChanged;
 

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace ILuffy.Halo
+﻿namespace ILuffy.Halo
 {
     public class Nullable<T>
     {

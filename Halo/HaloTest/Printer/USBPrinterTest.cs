@@ -1,6 +1,6 @@
 ﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ILuffy.Halo.Printer.USB;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace ILuffy.Halo.Printer.Test
 {

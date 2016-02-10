@@ -1,9 +1,5 @@
 ﻿using ILuffy.Halo.Windows.ViewModel;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace ILuffy.Halo.Test.WPFLib
 {
@@ -11,6 +7,7 @@ namespace ILuffy.Halo.Test.WPFLib
     public class ViewModelBaseTest : ViewModelBase
     {
         private bool isFake;
+
         public bool IsFake
         {
             get
@@ -21,6 +18,20 @@ namespace ILuffy.Halo.Test.WPFLib
             {
                 isFake = value;
                 OnPropertyChanged();
+            }
+        }
+
+        private bool isReal;
+
+        public bool IsReal
+        {
+            get
+            {
+                return isReal;
+            }
+            set
+            {
+                CheckPropertyChanged(ref isReal, value);
             }
         }
 
@@ -74,6 +85,20 @@ namespace ILuffy.Halo.Test.WPFLib
             var changed = CheckPropertyChanged(ref oldValue, true);
 
             Assert.AreEqual(propertyName, nameof(CheckPropertyChanged_ChangeValue_TriggerEvent));
+        }
+
+        [TestMethod]
+        public void CheckPropertyChanged_ChangePropertyValue_TriggerEvent()
+        {
+            string propertyName = string.Empty;
+
+            isReal = false;
+
+            PropertyChanged += (sender, e) => { propertyName = e.PropertyName; };
+
+            IsReal = true;
+
+            Assert.AreEqual(propertyName, nameof(IsReal));
         }
     }
 }

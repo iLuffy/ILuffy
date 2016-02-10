@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
-using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
 using System.Web.Script.Serialization;
@@ -14,15 +12,15 @@ namespace ILuffy.Halo
     /// <summary>
     /// Serializer Helper
     /// </summary>
-    class SerializerHelper
+    internal class SerializerHelper
     {
         /// <summary>
-        /// Serializes an object using the <see cref="XmlSerializer" /> 
+        /// Serializes an object using the <see cref="XmlSerializer" />
         /// into an XML string.
         /// </summary>
         /// <param name="data">The data to serialize.</param>
         /// <typeparam name="TData">The type of data to process.</typeparam>
-        /// <returns>An XML string containing serialized 
+        /// <returns>An XML string containing serialized
         /// data.
         /// </returns>
         public static String SerializeToXmlString<TData>(TData data)
@@ -37,12 +35,12 @@ namespace ILuffy.Halo
         }
 
         /// <summary>
-        /// Serializes an object using the <see cref="XmlSerializer" /> 
+        /// Serializes an object using the <see cref="XmlSerializer" />
         /// into an XML string.
         /// </summary>
         /// <param name="data">The data to serialize.</param>
         /// <typeparam name="TData">The type of data to process.</typeparam>
-        /// <returns>An XML string containing serialized 
+        /// <returns>An XML string containing serialized
         /// data.
         /// </returns>
         public static String SerializeToXmlString(Object data)
@@ -57,12 +55,12 @@ namespace ILuffy.Halo
         }
 
         /// <summary>
-        /// Deserializes an object from an XML string  
+        /// Deserializes an object from an XML string
         /// using the <see cref="XmlSerializer" />.
         /// </summary>
         /// <param name="data">The XML data to Deserializes.</param>
         /// <typeparam name="TData">The type of data to process.</typeparam>
-        /// <returns>The deserialized object.</returns>        
+        /// <returns>The deserialized object.</returns>
         public static TData DeserializeFromXmlString<TData>(String data)
         {
             using (StringReader reader = new StringReader(data))
@@ -73,12 +71,12 @@ namespace ILuffy.Halo
         }
 
         /// <summary>
-        /// Deserializes an object from an XML string  
+        /// Deserializes an object from an XML string
         /// using the <see cref="XmlSerializer" />.
         /// </summary>
         /// <param name="data">The XML data to Deserializes.</param>
         /// <param name="Type">The type of data to process.</typeparam>
-        /// <returns>The deserialized object.</returns> 
+        /// <returns>The deserialized object.</returns>
         public static Object DeserializeFromXmlString(String data, Type type)
         {
             using (StringReader reader = new StringReader(data))
@@ -89,12 +87,12 @@ namespace ILuffy.Halo
         }
 
         /// <summary>
-        /// Serializes an object using the <see cref="XmlSerializer" /> 
+        /// Serializes an object using the <see cref="XmlSerializer" />
         /// into an XML string.
         /// </summary>
         /// <param name="data">The data to serialize.</param>
         /// <typeparam name="TData">The type of data to process.</typeparam>
-        /// <returns>An XML string containing serialized 
+        /// <returns>An XML string containing serialized
         /// data.
         /// </returns>
         public static String SerializeToXmlStringWithoutDecalaring<TData>(TData data)
@@ -106,12 +104,12 @@ namespace ILuffy.Halo
         }
 
         /// <summary>
-        /// Serializes an object using the <see cref="XmlSerializer" /> 
+        /// Serializes an object using the <see cref="XmlSerializer" />
         /// into an XML string.
         /// </summary>
         /// <param name="data">The data to serialize.</param>
         /// <typeparam name="TData">The type of data to process.</typeparam>
-        /// <returns>An XML string containing serialized 
+        /// <returns>An XML string containing serialized
         /// data.
         /// </returns>
         public static String SerializeToXmlStringWithoutDecalaring(Object data)
@@ -123,12 +121,12 @@ namespace ILuffy.Halo
         }
 
         /// <summary>
-        /// Serializes an object using the <see cref="XmlSerializer" /> 
+        /// Serializes an object using the <see cref="XmlSerializer" />
         /// into an XML string.
         /// </summary>
         /// <param name="data">The data to serialize.</param>
         /// <typeparam name="TData">The type of data to process.</typeparam>
-        /// <returns>An XML string containing serialized 
+        /// <returns>An XML string containing serialized
         /// data.
         /// </returns>
         public static Object DeserializeToXmlStringWithoutDecalaring(String data, Type type)
@@ -137,19 +135,19 @@ namespace ILuffy.Halo
         }
 
         /// <summary>
-        /// Deserializes an object from an XML string  
+        /// Deserializes an object from an XML string
         /// using the <see cref="XmlSerializer" />.
         /// </summary>
         /// <param name="data">The XML data to Deserializes.</param>
         /// <typeparam name="TData">The type of data to process.</typeparam>
-        /// <returns>The deserialized object.</returns>        
+        /// <returns>The deserialized object.</returns>
         public static TData DeserializeFromXmlStringWithoutDecalaring<TData>(String data)
         {
             return SerializerHelper.DeserializeFromXmlString<TData>(data);
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="data"></param>
         /// <returns></returns>
@@ -240,7 +238,7 @@ namespace ILuffy.Halo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="data"></param>
         /// <param name="type"></param>

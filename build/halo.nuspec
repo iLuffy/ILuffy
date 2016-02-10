@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>halo</id>
+    <version>1.0.0</version>
+    <authors>Long</authors>
+    <owners>Long</owners>
+    <licenseUrl>https://github.com/iLuffy/ILuffy/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/iLuffy/ILuffy</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Provide basic function for application development</description>
+    <releaseNotes>No release notes now.</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>basic function</tags>
+  </metadata>
+</package>

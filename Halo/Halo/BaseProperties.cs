@@ -1,8 +1,6 @@
-﻿using ILuffy.Halo.I18N;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using ILuffy.Halo.I18N;
 
 namespace ILuffy.Halo
 {
