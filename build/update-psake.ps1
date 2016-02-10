@@ -19,3 +19,5 @@ write-host "download the psake.zip"
 ..\tools\curl -L https://github.com/psake/psake/archive/master.zip -o "$psakeZipFile"
 
 Expand-ZipFile -File $psakeZipFile  -Destination $workingDirectory
+
+Remove-Item -Path $psakeZipFile
