@@ -12,9 +12,10 @@ properties {
   $40clientoutput_dir = "$base_dir\buildArtifacts\net40client\"
   $45output_dir = "$base_dir\buildArtifacts\net45\"
   $nuget_package_dir = "$base_dir\nugetPackage"
-  $nuget_spec = "$build_dir\iLuffy.nuspec"
-  $nuget_target_spec = "$nuget_package_dir\iLuffy.nuspec"
-  $nuget_version = "1.0.0"
+  $nuget_spec = "$build_dir\IOPFramework.nuspec"
+  $nuget_target_spec = "$nuget_package_dir\IOPFramework.nuspec"
+  $nuget_version = "1.0.0-alpha"
+  $nuget_target_package = "$nuget_package_dir\IOPFramework.$nuget_version.nupkg"
   $nuget_tool = "$base_dir\tools\nuget.exe"
   $VS2015MSBuild = "C:\Program Files (x86)\MSBuild\14.0\Bin\MsBuild.exe"
   $binaryList = @("IOPCore.dll","IOPCore.dll.config","IOPI18N.dll","IOPPrinter.dll","IOPUI.dll")
@@ -132,7 +133,7 @@ task NugetMakePackage -depends Release {
 }
 
 task NugetPushPackage {
-	& $nuget_tool push $nuget_package_dir\Halo.$nuget_version.nupkg
+	& $nuget_tool push $nuget_target_package
 }
 
 task Release -depends Test {

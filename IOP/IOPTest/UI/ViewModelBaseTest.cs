@@ -1,4 +1,4 @@
-﻿using ILuffy.IOP.Windows.ViewModel;
+﻿using ILuffy.IOP.UI.ViewModel;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace ILuffy.IOP.Test.WPFLib
