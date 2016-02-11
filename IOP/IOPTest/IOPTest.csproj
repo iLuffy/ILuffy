@@ -64,19 +64,19 @@
     <Compile Include="WPFLib\ViewModelBaseTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\HaloI18N\IOPI18N.csproj">
+    <ProjectReference Include="..\IOPI18N\IOPI18N.csproj">
       <Project>{6992dab3-14e7-4a69-b6bf-2a47fa8e4359}</Project>
       <Name>IOPI18N</Name>
     </ProjectReference>
-    <ProjectReference Include="..\HaloPrinter\IOPPrinter.csproj">
+    <ProjectReference Include="..\IOPPrinter\IOPPrinter.csproj">
       <Project>{3319320b-ba12-40d4-bf14-d69b3f6b372a}</Project>
       <Name>IOPPrinter</Name>
     </ProjectReference>
-    <ProjectReference Include="..\HaloWPFLib\IOPUI.csproj">
+    <ProjectReference Include="..\IOPUI\IOPUI.csproj">
       <Project>{4fda4515-91ad-4554-9c71-2528d529d3b4}</Project>
       <Name>IOPUI</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Halo\IOPCore.csproj">
+    <ProjectReference Include="..\IOPCore\IOPCore.csproj">
       <Project>{49ec0a7e-5fa6-43ba-9ddc-97c6891e7928}</Project>
       <Name>IOPCore</Name>
     </ProjectReference>

@@ -59,11 +59,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\HaloI18N\IOPI18N.csproj">
+    <ProjectReference Include="..\IOPI18N\IOPI18N.csproj">
       <Project>{6992dab3-14e7-4a69-b6bf-2a47fa8e4359}</Project>
       <Name>IOPI18N</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Halo\IOPCore.csproj">
+    <ProjectReference Include="..\IOPCore\IOPCore.csproj">
       <Project>{49ec0a7e-5fa6-43ba-9ddc-97c6891e7928}</Project>
       <Name>IOPCore</Name>
     </ProjectReference>

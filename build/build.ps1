@@ -4,8 +4,8 @@
 properties {
   $build_dir = resolve-path .
   $base_dir = split-path $build_dir
-  $code_dir = "$base_dir\Halo\"
-  $sln_file= "$base_dir\Halo\Halo.sln"
+  $code_dir = "$base_dir\IOP\"
+  $sln_file= "$base_dir\IOP\IOPFramework.sln"
   $build_artifacts_dir = "$base_dir\buildArtifacts"
   $35output_dir = "$base_dir\buildArtifacts\net35\"
   $40output_dir = "$base_dir\buildArtifacts\net40\"
@@ -17,7 +17,7 @@ properties {
   $nuget_version = "1.0.0"
   $nuget_tool = "$base_dir\tools\nuget.exe"
   $VS2015MSBuild = "C:\Program Files (x86)\MSBuild\14.0\Bin\MsBuild.exe"
-  $binaryList = @("Halo.dll","Halo.dll.config","HaloI18N.dll","HaloPrinter.dll","HaloWPFLib.dll")
+  $binaryList = @("IOPCore.dll","IOPCore.dll.config","IOPI18N.dll","IOPPrinter.dll","IOPUI.dll")
 }
 
 Function Clean-Directory([string]$folder) {
