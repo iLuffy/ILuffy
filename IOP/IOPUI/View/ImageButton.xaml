@@ -1,9 +1,9 @@
-﻿<Button x:Class="ILuffy.IOP.Windows.View.ImageButton"
+﻿<Button x:Class="ILuffy.IOP.UI.View.ImageButton"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:ILuffy.IOP.Windows.View"
+             xmlns:local="clr-namespace:ILuffy.IOP.UI.View"
              mc:Ignorable="d" 
              d:DesignHeight="28" d:DesignWidth="300" MinWidth="80" x:Name="UC">
     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">

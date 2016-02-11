@@ -3,7 +3,7 @@ using System.Text;
 using System.Windows;
 using ILuffy.IOP.I18N;
 
-namespace ILuffy.IOP.Windows
+namespace ILuffy.IOP.UI
 {
     public static class I18NUtility
     {

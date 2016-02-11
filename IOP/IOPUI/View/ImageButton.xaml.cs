@@ -12,7 +12,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ILuffy.IOP.Windows.View
+namespace ILuffy.IOP.UI.View
 {
     /// <summary>
     /// Interaction logic for ImageButton.xaml

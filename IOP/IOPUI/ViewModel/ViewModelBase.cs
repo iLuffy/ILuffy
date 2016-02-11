@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace ILuffy.IOP.Windows.ViewModel
+namespace ILuffy.IOP.UI.ViewModel
 {
     public abstract class ViewModelBase : INotifyPropertyChanged
     {
