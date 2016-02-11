@@ -1,7 +1,7 @@
-﻿using ILuffy.Halo.Windows.ViewModel;
+﻿using ILuffy.IOP.Windows.ViewModel;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace ILuffy.Halo.Test.WPFLib
+namespace ILuffy.IOP.Test.WPFLib
 {
     [TestClass]
     public class ViewModelBaseTest : ViewModelBase

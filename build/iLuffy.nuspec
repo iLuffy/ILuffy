@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Halo</id>
+	<title>Halo shared library</title>
+    <version>1.0.1</version>
+    <authors>Long</authors>
+    <owners>Long</owners>
+    <licenseUrl>https://github.com/iLuffy/ILuffy/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/iLuffy/ILuffy</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Provide common function for application development, it's not the Halo game library.</description>
+    <releaseNotes>No release notes now.</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>common class</tags>
+  </metadata>
+</package>

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using ILuffy.Halo.I18N;
+using ILuffy.IOP.I18N;
 
-namespace ILuffy.Halo
+namespace ILuffy.IOP
 {
     public abstract class BaseProperties
     {

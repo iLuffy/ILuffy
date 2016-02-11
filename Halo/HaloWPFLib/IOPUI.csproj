@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3319320B-BA12-40D4-BF14-D69B3F6B372A}</ProjectGuid>
+    <ProjectGuid>{4FDA4515-91AD-4554-9C71-2528D529D3B4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ILuffy.Halo.Printer</RootNamespace>
-    <AssemblyName>HaloPrinter</AssemblyName>
+    <RootNamespace>ILuffy.IOP.UI</RootNamespace>
+    <AssemblyName>IOPUI</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -38,26 +39,40 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IPrinter.cs" />
-    <Compile Include="PrinterParameter.cs" />
+    <Compile Include="I18NUtility.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="USB\USBPrinter.cs" />
+    <Compile Include="ViewModel\ViewModelBase.cs" />
+    <Compile Include="View\ImageButton.xaml.cs">
+      <DependentUpon>ImageButton.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\HaloI18N\HaloI18N.csproj">
+    <ProjectReference Include="..\HaloI18N\IOPI18N.csproj">
       <Project>{6992dab3-14e7-4a69-b6bf-2a47fa8e4359}</Project>
-      <Name>HaloI18N</Name>
+      <Name>IOPI18N</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Halo\Halo.csproj">
+    <ProjectReference Include="..\Halo\IOPCore.csproj">
       <Project>{49ec0a7e-5fa6-43ba-9ddc-97c6891e7928}</Project>
-      <Name>Halo</Name>
+      <Name>IOPCore</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="View\ImageButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

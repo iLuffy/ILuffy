@@ -7,7 +7,7 @@ using System.Web.Script.Serialization;
 using System.Xml;
 using System.Xml.Serialization;
 
-namespace ILuffy.Halo
+namespace ILuffy.IOP
 {
     /// <summary>
     /// Serializer Helper

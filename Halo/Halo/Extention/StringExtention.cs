@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ILuffy.Halo
+namespace ILuffy.IOP
 {
     public static class StringExtension
     {

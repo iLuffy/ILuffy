@@ -1,7 +1,7 @@
 ﻿using System;
-using ILuffy.Halo.I18N;
+using ILuffy.IOP.I18N;
 
-namespace ILuffy.Halo
+namespace ILuffy.IOP
 {
     public static class InstanceInfoExtension
     {

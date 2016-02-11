@@ -1,4 +1,4 @@
-﻿namespace ILuffy.Halo.Printer
+﻿namespace ILuffy.IOP.Printer
 {
     /// <summary>
     /// Parameter

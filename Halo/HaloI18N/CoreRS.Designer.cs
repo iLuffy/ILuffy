@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ILuffy.Halo.I18N {
+namespace ILuffy.IOP.I18N {
     using System;
     
     
@@ -61,7 +61,7 @@ namespace ILuffy.Halo.I18N {
                     global::System.Threading.Monitor.Enter(InternalSyncObject);
                     try {
                         if (object.ReferenceEquals(_resourceManager, null)) {
-                            global::System.Threading.Interlocked.Exchange(ref _resourceManager, new global::System.Resources.ResourceManager("ILuffy.Halo.I18N.CoreRS", typeof(CoreRS).Assembly));
+                            global::System.Threading.Interlocked.Exchange(ref _resourceManager, new global::System.Resources.ResourceManager("ILuffy.IOP.I18N.CoreRS", typeof(CoreRS).Assembly));
                         }
                     }
                     finally {

@@ -4,15 +4,16 @@
 properties {
   $build_dir = resolve-path .
   $base_dir = split-path $build_dir
-  $sln_file="$base_dir\Halo\Halo.sln"
+  $code_dir = "$base_dir\Halo\"
+  $sln_file= "$base_dir\Halo\Halo.sln"
   $build_artifacts_dir = "$base_dir\buildArtifacts"
   $35output_dir = "$base_dir\buildArtifacts\net35\"
   $40output_dir = "$base_dir\buildArtifacts\net40\"
   $40clientoutput_dir = "$base_dir\buildArtifacts\net40client\"
   $45output_dir = "$base_dir\buildArtifacts\net45\"
-  $nuget_package_dir = "$base_dir\nugetPackage\"
-  $nuget_spec = "$build_dir\halo.nuspec"
-  $nuget_target_spec = "$nuget_package_dir\halo.nuspec"
+  $nuget_package_dir = "$base_dir\nugetPackage"
+  $nuget_spec = "$build_dir\iLuffy.nuspec"
+  $nuget_target_spec = "$nuget_package_dir\iLuffy.nuspec"
   $nuget_version = "1.0.0"
   $nuget_tool = "$base_dir\tools\nuget.exe"
   $VS2015MSBuild = "C:\Program Files (x86)\MSBuild\14.0\Bin\MsBuild.exe"
@@ -25,6 +26,10 @@ Function Clean-Directory([string]$folder) {
         Remove-Item -Force -Recurse $folder -ErrorAction SilentlyContinue
     }
     mkdir $folder | out-null
+}
+
+Function Delete-BinObj([string]$folder) {
+	Get-ChildItem $folder -include bin,obj -recurse -force | Remove-Item -force -recurse
 }
 
 task default -depends Release
@@ -46,7 +51,8 @@ task CleanMSBuild {
 
 task Compile35 -depends CleanMSBuild {
 
-    exec { msbuild "$sln_file" /t:clean /p:Configuration=Release /v:quiet }
+    #exec { msbuild "$sln_file" /t:clean /p:Configuration=Release /v:quiet }
+	Delete-BinObj $code_dir
 
     & "$VS2015MSBuild" `
         "$sln_file" `
@@ -58,8 +64,9 @@ task Compile35 -depends CleanMSBuild {
 
 task Compile40 -depends CleanMSBuild {
     
-    exec { msbuild "$sln_file" /t:clean /p:Configuration=Release /v:quiet }
-
+    #exec { msbuild "$sln_file" /t:clean /p:Configuration=Release /v:quiet }
+	Delete-BinObj $code_dir
+	
     & "$VS2015MSBuild" `
         "$sln_file" `
         /p:OutDir="$40output_dir" `
@@ -70,8 +77,9 @@ task Compile40 -depends CleanMSBuild {
 
 task Compile40Client {
     
-    exec { msbuild "$sln_file" /t:clean /p:Configuration=Release /v:quiet }
-
+    #exec { msbuild "$sln_file" /t:clean /p:Configuration=Release /v:quiet }
+	Delete-BinObj $code_dir
+	
     & "$VS2015MSBuild" `
         "$sln_file" `
         /p:OutDir="$40clientoutput_dir" `
@@ -83,8 +91,9 @@ task Compile40Client {
 
 task Compile45 {
 
-    exec { msbuild "$sln_file" /t:clean /p:Configuration=Release /v:quiet }
-
+    #exec { msbuild "$sln_file" /t:clean /p:Configuration=Release /v:quiet }
+	Delete-BinObj $code_dir
+	
     & "$VS2015MSBuild" `
         "$sln_file" `
         /p:OutDir="$45output_dir" `
@@ -106,7 +115,7 @@ task Merge {
 }
 
 task NugetMakePackage -depends Release {
-	Copy-Item $nuget_spec $nuget_package_dir
+	Copy-Item $nuget_spec $nuget_package_dir\
 	Clean-Directory $nuget_package_dir\lib
 	Clean-Directory $nuget_package_dir\lib\net35
 	Clean-Directory $nuget_package_dir\lib\net40
@@ -123,7 +132,7 @@ task NugetMakePackage -depends Release {
 }
 
 task NugetPushPackage {
-	& $nuget_tool push $nuget_package_dir\halo.$nuget_version.nupkg
+	& $nuget_tool push $nuget_package_dir\Halo.$nuget_version.nupkg
 }
 
 task Release -depends Test {

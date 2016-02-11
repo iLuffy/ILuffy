@@ -1,4 +1,4 @@
-﻿namespace ILuffy.Halo
+﻿namespace ILuffy.IOP
 {
     public class Nullable<T>
     {

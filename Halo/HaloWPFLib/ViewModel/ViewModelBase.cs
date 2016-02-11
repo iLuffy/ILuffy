@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace ILuffy.Halo.Windows.ViewModel
+namespace ILuffy.IOP.Windows.ViewModel
 {
     public abstract class ViewModelBase : INotifyPropertyChanged
     {

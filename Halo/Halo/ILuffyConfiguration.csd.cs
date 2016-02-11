@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ILuffy.Halo
+namespace ILuffy.IOP
 {
     
     
@@ -35,11 +35,11 @@ namespace ILuffy.Halo
         /// Gets the ILuffyConfig instance.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("ConfigurationSectionDesigner.CsdFileGenerator", "2.0.1.801")]
-        public static global::ILuffy.Halo.ILuffyConfig Instance
+        public static global::ILuffy.IOP.ILuffyConfig Instance
         {
             get
             {
-                return ((global::ILuffy.Halo.ILuffyConfig)(global::System.Configuration.ConfigurationManager.GetSection(global::ILuffy.Halo.ILuffyConfig.ILuffyConfigSectionPath)));
+                return ((global::ILuffy.IOP.ILuffyConfig)(global::System.Configuration.ConfigurationManager.GetSection(global::ILuffy.IOP.ILuffyConfig.ILuffyConfigSectionPath)));
             }
         }
         #endregion
@@ -59,12 +59,12 @@ namespace ILuffy.Halo
         /// the parser doesn't throw an exception because it encounters the unknown "xmlns" attribute.
         /// </remarks>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("ConfigurationSectionDesigner.CsdFileGenerator", "2.0.1.801")]
-        [global::System.Configuration.ConfigurationPropertyAttribute(global::ILuffy.Halo.ILuffyConfig.XmlnsPropertyName, IsRequired=false, IsKey=false, IsDefaultCollection=false)]
+        [global::System.Configuration.ConfigurationPropertyAttribute(global::ILuffy.IOP.ILuffyConfig.XmlnsPropertyName, IsRequired=false, IsKey=false, IsDefaultCollection=false)]
         public string Xmlns
         {
             get
             {
-                return ((string)(base[global::ILuffy.Halo.ILuffyConfig.XmlnsPropertyName]));
+                return ((string)(base[global::ILuffy.IOP.ILuffyConfig.XmlnsPropertyName]));
             }
         }
         #endregion
@@ -92,22 +92,22 @@ namespace ILuffy.Halo
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("ConfigurationSectionDesigner.CsdFileGenerator", "2.0.1.801")]
         [global::System.ComponentModel.DescriptionAttribute("The Instances.")]
-        [global::System.Configuration.ConfigurationPropertyAttribute(global::ILuffy.Halo.ILuffyConfig.InstancesPropertyName, IsRequired=false, IsKey=false, IsDefaultCollection=false)]
-        public virtual global::ILuffy.Halo.InstanceCollection Instances
+        [global::System.Configuration.ConfigurationPropertyAttribute(global::ILuffy.IOP.ILuffyConfig.InstancesPropertyName, IsRequired=false, IsKey=false, IsDefaultCollection=false)]
+        public virtual global::ILuffy.IOP.InstanceCollection Instances
         {
             get
             {
-                return ((global::ILuffy.Halo.InstanceCollection)(base[global::ILuffy.Halo.ILuffyConfig.InstancesPropertyName]));
+                return ((global::ILuffy.IOP.InstanceCollection)(base[global::ILuffy.IOP.ILuffyConfig.InstancesPropertyName]));
             }
             set
             {
-                base[global::ILuffy.Halo.ILuffyConfig.InstancesPropertyName] = value;
+                base[global::ILuffy.IOP.ILuffyConfig.InstancesPropertyName] = value;
             }
         }
         #endregion
     }
 }
-namespace ILuffy.Halo
+namespace ILuffy.IOP
 {
     
     
@@ -140,16 +140,16 @@ namespace ILuffy.Halo
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("ConfigurationSectionDesigner.CsdFileGenerator", "2.0.1.801")]
         [global::System.ComponentModel.DescriptionAttribute("The Name.")]
-        [global::System.Configuration.ConfigurationPropertyAttribute(global::ILuffy.Halo.InstanceElement.NamePropertyName, IsRequired=true, IsKey=true, IsDefaultCollection=false)]
+        [global::System.Configuration.ConfigurationPropertyAttribute(global::ILuffy.IOP.InstanceElement.NamePropertyName, IsRequired=true, IsKey=true, IsDefaultCollection=false)]
         public virtual string Name
         {
             get
             {
-                return ((string)(base[global::ILuffy.Halo.InstanceElement.NamePropertyName]));
+                return ((string)(base[global::ILuffy.IOP.InstanceElement.NamePropertyName]));
             }
             set
             {
-                base[global::ILuffy.Halo.InstanceElement.NamePropertyName] = value;
+                base[global::ILuffy.IOP.InstanceElement.NamePropertyName] = value;
             }
         }
         #endregion
@@ -166,16 +166,16 @@ namespace ILuffy.Halo
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("ConfigurationSectionDesigner.CsdFileGenerator", "2.0.1.801")]
         [global::System.ComponentModel.DescriptionAttribute("The Description.")]
-        [global::System.Configuration.ConfigurationPropertyAttribute(global::ILuffy.Halo.InstanceElement.DescriptionPropertyName, IsRequired=false, IsKey=false, IsDefaultCollection=false)]
+        [global::System.Configuration.ConfigurationPropertyAttribute(global::ILuffy.IOP.InstanceElement.DescriptionPropertyName, IsRequired=false, IsKey=false, IsDefaultCollection=false)]
         public virtual string Description
         {
             get
             {
-                return ((string)(base[global::ILuffy.Halo.InstanceElement.DescriptionPropertyName]));
+                return ((string)(base[global::ILuffy.IOP.InstanceElement.DescriptionPropertyName]));
             }
             set
             {
-                base[global::ILuffy.Halo.InstanceElement.DescriptionPropertyName] = value;
+                base[global::ILuffy.IOP.InstanceElement.DescriptionPropertyName] = value;
             }
         }
         #endregion
@@ -192,35 +192,35 @@ namespace ILuffy.Halo
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("ConfigurationSectionDesigner.CsdFileGenerator", "2.0.1.801")]
         [global::System.ComponentModel.DescriptionAttribute("The TypeFullName.")]
-        [global::System.Configuration.ConfigurationPropertyAttribute(global::ILuffy.Halo.InstanceElement.TypeFullNamePropertyName, IsRequired=false, IsKey=false, IsDefaultCollection=false)]
+        [global::System.Configuration.ConfigurationPropertyAttribute(global::ILuffy.IOP.InstanceElement.TypeFullNamePropertyName, IsRequired=false, IsKey=false, IsDefaultCollection=false)]
         public virtual string TypeFullName
         {
             get
             {
-                return ((string)(base[global::ILuffy.Halo.InstanceElement.TypeFullNamePropertyName]));
+                return ((string)(base[global::ILuffy.IOP.InstanceElement.TypeFullNamePropertyName]));
             }
             set
             {
-                base[global::ILuffy.Halo.InstanceElement.TypeFullNamePropertyName] = value;
+                base[global::ILuffy.IOP.InstanceElement.TypeFullNamePropertyName] = value;
             }
         }
         #endregion
     }
 }
-namespace ILuffy.Halo
+namespace ILuffy.IOP
 {
     
     
     /// <summary>
     /// A collection of InstanceElement instances.
     /// </summary>
-    [global::System.Configuration.ConfigurationCollectionAttribute(typeof(global::ILuffy.Halo.InstanceElement), CollectionType=global::System.Configuration.ConfigurationElementCollectionType.BasicMapAlternate, AddItemName=global::ILuffy.Halo.InstanceCollection.InstanceElementPropertyName)]
+    [global::System.Configuration.ConfigurationCollectionAttribute(typeof(global::ILuffy.IOP.InstanceElement), CollectionType=global::System.Configuration.ConfigurationElementCollectionType.BasicMapAlternate, AddItemName=global::ILuffy.IOP.InstanceCollection.InstanceElementPropertyName)]
     public partial class InstanceCollection : global::System.Configuration.ConfigurationElementCollection
     {
         
         #region Constants
         /// <summary>
-        /// The XML name of the individual <see cref="global::ILuffy.Halo.InstanceElement"/> instances in this collection.
+        /// The XML name of the individual <see cref="global::ILuffy.IOP.InstanceElement"/> instances in this collection.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("ConfigurationSectionDesigner.CsdFileGenerator", "2.0.1.801")]
         internal const string InstanceElementPropertyName = "instanceElement";
@@ -248,7 +248,7 @@ namespace ILuffy.Halo
         {
             get
             {
-                return global::ILuffy.Halo.InstanceCollection.InstanceElementPropertyName;
+                return global::ILuffy.IOP.InstanceCollection.InstanceElementPropertyName;
             }
         }
         
@@ -262,7 +262,7 @@ namespace ILuffy.Halo
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("ConfigurationSectionDesigner.CsdFileGenerator", "2.0.1.801")]
         protected override bool IsElementName(string elementName)
         {
-            return (elementName == global::ILuffy.Halo.InstanceCollection.InstanceElementPropertyName);
+            return (elementName == global::ILuffy.IOP.InstanceCollection.InstanceElementPropertyName);
         }
         
         /// <summary>
@@ -275,57 +275,57 @@ namespace ILuffy.Halo
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("ConfigurationSectionDesigner.CsdFileGenerator", "2.0.1.801")]
         protected override object GetElementKey(global::System.Configuration.ConfigurationElement element)
         {
-            return ((global::ILuffy.Halo.InstanceElement)(element)).Name;
+            return ((global::ILuffy.IOP.InstanceElement)(element)).Name;
         }
         
         /// <summary>
-        /// Creates a new <see cref="global::ILuffy.Halo.InstanceElement"/>.
+        /// Creates a new <see cref="global::ILuffy.IOP.InstanceElement"/>.
         /// </summary>
         /// <returns>
-        /// A new <see cref="global::ILuffy.Halo.InstanceElement"/>.
+        /// A new <see cref="global::ILuffy.IOP.InstanceElement"/>.
         /// </returns>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("ConfigurationSectionDesigner.CsdFileGenerator", "2.0.1.801")]
         protected override global::System.Configuration.ConfigurationElement CreateNewElement()
         {
-            return new global::ILuffy.Halo.InstanceElement();
+            return new global::ILuffy.IOP.InstanceElement();
         }
         #endregion
         
         #region Indexer
         /// <summary>
-        /// Gets the <see cref="global::ILuffy.Halo.InstanceElement"/> at the specified index.
+        /// Gets the <see cref="global::ILuffy.IOP.InstanceElement"/> at the specified index.
         /// </summary>
-        /// <param name="index">The index of the <see cref="global::ILuffy.Halo.InstanceElement"/> to retrieve.</param>
+        /// <param name="index">The index of the <see cref="global::ILuffy.IOP.InstanceElement"/> to retrieve.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("ConfigurationSectionDesigner.CsdFileGenerator", "2.0.1.801")]
-        public global::ILuffy.Halo.InstanceElement this[int index]
+        public global::ILuffy.IOP.InstanceElement this[int index]
         {
             get
             {
-                return ((global::ILuffy.Halo.InstanceElement)(base.BaseGet(index)));
+                return ((global::ILuffy.IOP.InstanceElement)(base.BaseGet(index)));
             }
         }
         
         /// <summary>
-        /// Gets the <see cref="global::ILuffy.Halo.InstanceElement"/> with the specified key.
+        /// Gets the <see cref="global::ILuffy.IOP.InstanceElement"/> with the specified key.
         /// </summary>
-        /// <param name="name">The key of the <see cref="global::ILuffy.Halo.InstanceElement"/> to retrieve.</param>
+        /// <param name="name">The key of the <see cref="global::ILuffy.IOP.InstanceElement"/> to retrieve.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("ConfigurationSectionDesigner.CsdFileGenerator", "2.0.1.801")]
-        public global::ILuffy.Halo.InstanceElement this[object name]
+        public global::ILuffy.IOP.InstanceElement this[object name]
         {
             get
             {
-                return ((global::ILuffy.Halo.InstanceElement)(base.BaseGet(name)));
+                return ((global::ILuffy.IOP.InstanceElement)(base.BaseGet(name)));
             }
         }
         #endregion
         
         #region Add
         /// <summary>
-        /// Adds the specified <see cref="global::ILuffy.Halo.InstanceElement"/> to the <see cref="global::System.Configuration.ConfigurationElementCollection"/>.
+        /// Adds the specified <see cref="global::ILuffy.IOP.InstanceElement"/> to the <see cref="global::System.Configuration.ConfigurationElementCollection"/>.
         /// </summary>
-        /// <param name="instanceElement">The <see cref="global::ILuffy.Halo.InstanceElement"/> to add.</param>
+        /// <param name="instanceElement">The <see cref="global::ILuffy.IOP.InstanceElement"/> to add.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("ConfigurationSectionDesigner.CsdFileGenerator", "2.0.1.801")]
-        public void Add(global::ILuffy.Halo.InstanceElement instanceElement)
+        public void Add(global::ILuffy.IOP.InstanceElement instanceElement)
         {
             base.BaseAdd(instanceElement);
         }
@@ -333,11 +333,11 @@ namespace ILuffy.Halo
         
         #region Remove
         /// <summary>
-        /// Removes the specified <see cref="global::ILuffy.Halo.InstanceElement"/> from the <see cref="global::System.Configuration.ConfigurationElementCollection"/>.
+        /// Removes the specified <see cref="global::ILuffy.IOP.InstanceElement"/> from the <see cref="global::System.Configuration.ConfigurationElementCollection"/>.
         /// </summary>
-        /// <param name="instanceElement">The <see cref="global::ILuffy.Halo.InstanceElement"/> to remove.</param>
+        /// <param name="instanceElement">The <see cref="global::ILuffy.IOP.InstanceElement"/> to remove.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("ConfigurationSectionDesigner.CsdFileGenerator", "2.0.1.801")]
-        public void Remove(global::ILuffy.Halo.InstanceElement instanceElement)
+        public void Remove(global::ILuffy.IOP.InstanceElement instanceElement)
         {
             base.BaseRemove(this.GetElementKey(instanceElement));
         }
@@ -345,23 +345,23 @@ namespace ILuffy.Halo
         
         #region GetItem
         /// <summary>
-        /// Gets the <see cref="global::ILuffy.Halo.InstanceElement"/> at the specified index.
+        /// Gets the <see cref="global::ILuffy.IOP.InstanceElement"/> at the specified index.
         /// </summary>
-        /// <param name="index">The index of the <see cref="global::ILuffy.Halo.InstanceElement"/> to retrieve.</param>
+        /// <param name="index">The index of the <see cref="global::ILuffy.IOP.InstanceElement"/> to retrieve.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("ConfigurationSectionDesigner.CsdFileGenerator", "2.0.1.801")]
-        public global::ILuffy.Halo.InstanceElement GetItemAt(int index)
+        public global::ILuffy.IOP.InstanceElement GetItemAt(int index)
         {
-            return ((global::ILuffy.Halo.InstanceElement)(base.BaseGet(index)));
+            return ((global::ILuffy.IOP.InstanceElement)(base.BaseGet(index)));
         }
         
         /// <summary>
-        /// Gets the <see cref="global::ILuffy.Halo.InstanceElement"/> with the specified key.
+        /// Gets the <see cref="global::ILuffy.IOP.InstanceElement"/> with the specified key.
         /// </summary>
-        /// <param name="name">The key of the <see cref="global::ILuffy.Halo.InstanceElement"/> to retrieve.</param>
+        /// <param name="name">The key of the <see cref="global::ILuffy.IOP.InstanceElement"/> to retrieve.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("ConfigurationSectionDesigner.CsdFileGenerator", "2.0.1.801")]
-        public global::ILuffy.Halo.InstanceElement GetItemByKey(string name)
+        public global::ILuffy.IOP.InstanceElement GetItemByKey(string name)
         {
-            return ((global::ILuffy.Halo.InstanceElement)(base.BaseGet(((object)(name)))));
+            return ((global::ILuffy.IOP.InstanceElement)(base.BaseGet(((object)(name)))));
         }
         #endregion
         

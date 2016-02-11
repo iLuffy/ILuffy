@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Text;
 using System.Windows;
-using ILuffy.Halo.I18N;
+using ILuffy.IOP.I18N;
 
-namespace ILuffy.Halo.Windows
+namespace ILuffy.IOP.Windows
 {
     public static class I18NUtility
     {

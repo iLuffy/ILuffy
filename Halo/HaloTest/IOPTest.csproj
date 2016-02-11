@@ -6,8 +6,8 @@
     <ProjectGuid>{472CA62D-6499-43F0-B316-D4DE937C0E0E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ILuffy.Halo.Test</RootNamespace>
-    <AssemblyName>HaloTest</AssemblyName>
+    <RootNamespace>ILuffy.IOP.Test</RootNamespace>
+    <AssemblyName>IOPTest</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -64,21 +64,21 @@
     <Compile Include="WPFLib\ViewModelBaseTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\HaloI18N\HaloI18N.csproj">
+    <ProjectReference Include="..\HaloI18N\IOPI18N.csproj">
       <Project>{6992dab3-14e7-4a69-b6bf-2a47fa8e4359}</Project>
-      <Name>HaloI18N</Name>
+      <Name>IOPI18N</Name>
     </ProjectReference>
-    <ProjectReference Include="..\HaloPrinter\HaloPrinter.csproj">
+    <ProjectReference Include="..\HaloPrinter\IOPPrinter.csproj">
       <Project>{3319320b-ba12-40d4-bf14-d69b3f6b372a}</Project>
-      <Name>HaloPrinter</Name>
+      <Name>IOPPrinter</Name>
     </ProjectReference>
-    <ProjectReference Include="..\HaloWPFLib\HaloWPFLib.csproj">
+    <ProjectReference Include="..\HaloWPFLib\IOPUI.csproj">
       <Project>{4fda4515-91ad-4554-9c71-2528d529d3b4}</Project>
-      <Name>HaloWPFLib</Name>
+      <Name>IOPUI</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Halo\Halo.csproj">
+    <ProjectReference Include="..\Halo\IOPCore.csproj">
       <Project>{49ec0a7e-5fa6-43ba-9ddc-97c6891e7928}</Project>
-      <Name>Halo</Name>
+      <Name>IOPCore</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

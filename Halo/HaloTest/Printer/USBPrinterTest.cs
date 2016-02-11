@@ -1,8 +1,8 @@
 ﻿using System;
-using ILuffy.Halo.Printer.USB;
+using ILuffy.IOP.Printer.USB;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace ILuffy.Halo.Printer.Test
+namespace ILuffy.IOP.Printer.Test
 {
     [TestClass]
     public class USBPrinterTest
