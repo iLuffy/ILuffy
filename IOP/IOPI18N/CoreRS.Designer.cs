@@ -87,6 +87,15 @@ namespace ILuffy.IOP.I18N {
         }
         
         /// <summary>
+        /// Looks up a localized string similar to 'Architecture not supported.'.
+        /// </summary>
+        public static string ArchitectureNotSupported {
+            get {
+                return ResourceManager.GetString(ResourceNames.ArchitectureNotSupported, _resourceCulture);
+            }
+        }
+        
+        /// <summary>
         /// Looks up a localized string similar to 'Argument {0} is null.'.
         /// </summary>
         public static string ArgumentIsNull {
@@ -105,11 +114,47 @@ namespace ILuffy.IOP.I18N {
         }
         
         /// <summary>
+        /// Looks up a localized string similar to 'There is an error {0}.'.
+        /// </summary>
+        public static string FlushLoggerError {
+            get {
+                return ResourceManager.GetString(ResourceNames.FlushLoggerError, _resourceCulture);
+            }
+        }
+        
+        /// <summary>
         /// Looks up a localized string similar to 'Format key:{0} with parameters:{1} failed:{2}'.
         /// </summary>
         public static string FormatResourceKeyFailed {
             get {
                 return ResourceManager.GetString(ResourceNames.FormatResourceKeyFailed, _resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Looks up a localized string similar to 'Cannot get IOP config from configuration file {0}'.
+        /// </summary>
+        public static string IOPConfigIsNotAvailable {
+            get {
+                return ResourceManager.GetString(ResourceNames.IOPConfigIsNotAvailable, _resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Looks up a localized string similar to 'There is no available printer.'.
+        /// </summary>
+        public static string NoAvailablePrinter {
+            get {
+                return ResourceManager.GetString(ResourceNames.NoAvailablePrinter, _resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Looks up a localized string similar to 'The http request {0} is failed with {1}. Details:{2}'.
+        /// </summary>
+        public static string RequestFailed {
+            get {
+                return ResourceManager.GetString(ResourceNames.RequestFailed, _resourceCulture);
             }
         }
         
@@ -150,6 +195,15 @@ namespace ILuffy.IOP.I18N {
         }
         
         /// <summary>
+        /// Formats a localized string similar to 'There is an error {0}.'.
+        /// </summary>
+        /// <param name="arg0">An object (0) to format.</param>
+        /// <returns>A copy of format string in which the format items have been replaced by the String equivalent of the corresponding instances of Object in arguments.</returns>
+        public static string FlushLoggerErrorFormat(object arg0) {
+            return string.Format(_resourceCulture, FlushLoggerError, arg0);
+        }
+        
+        /// <summary>
         /// Formats a localized string similar to 'Format key:{0} with parameters:{1} failed:{2}'.
         /// </summary>
         /// <param name="arg0">An object (0) to format.</param>
@@ -158,6 +212,26 @@ namespace ILuffy.IOP.I18N {
         /// <returns>A copy of format string in which the format items have been replaced by the String equivalent of the corresponding instances of Object in arguments.</returns>
         public static string FormatResourceKeyFailedFormat(object arg0, object arg1, object arg2) {
             return string.Format(_resourceCulture, FormatResourceKeyFailed, arg0, arg1, arg2);
+        }
+        
+        /// <summary>
+        /// Formats a localized string similar to 'Cannot get IOP config from configuration file {0}'.
+        /// </summary>
+        /// <param name="arg0">An object (0) to format.</param>
+        /// <returns>A copy of format string in which the format items have been replaced by the String equivalent of the corresponding instances of Object in arguments.</returns>
+        public static string IOPConfigIsNotAvailableFormat(object arg0) {
+            return string.Format(_resourceCulture, IOPConfigIsNotAvailable, arg0);
+        }
+        
+        /// <summary>
+        /// Formats a localized string similar to 'The http request {0} is failed with {1}. Details:{2}'.
+        /// </summary>
+        /// <param name="arg0">An object (0) to format.</param>
+        /// <param name="arg1">An object (1) to format.</param>
+        /// <param name="arg2">An object (2) to format.</param>
+        /// <returns>A copy of format string in which the format items have been replaced by the String equivalent of the corresponding instances of Object in arguments.</returns>
+        public static string RequestFailedFormat(object arg0, object arg1, object arg2) {
+            return string.Format(_resourceCulture, RequestFailed, arg0, arg1, arg2);
         }
         
         /// <summary>
@@ -184,6 +258,11 @@ namespace ILuffy.IOP.I18N {
         public class ResourceNames {
             
             /// <summary>
+            /// Stores the resource name 'ArchitectureNotSupported'.
+            /// </summary>
+            public const string ArchitectureNotSupported = "ArchitectureNotSupported";
+            
+            /// <summary>
             /// Stores the resource name 'ArgumentIsNull'.
             /// </summary>
             public const string ArgumentIsNull = "ArgumentIsNull";
@@ -194,9 +273,29 @@ namespace ILuffy.IOP.I18N {
             public const string EntryNotFound = "EntryNotFound";
             
             /// <summary>
+            /// Stores the resource name 'FlushLoggerError'.
+            /// </summary>
+            public const string FlushLoggerError = "FlushLoggerError";
+            
+            /// <summary>
             /// Stores the resource name 'FormatResourceKeyFailed'.
             /// </summary>
             public const string FormatResourceKeyFailed = "FormatResourceKeyFailed";
+            
+            /// <summary>
+            /// Stores the resource name 'IOPConfigIsNotAvailable'.
+            /// </summary>
+            public const string IOPConfigIsNotAvailable = "IOPConfigIsNotAvailable";
+            
+            /// <summary>
+            /// Stores the resource name 'NoAvailablePrinter'.
+            /// </summary>
+            public const string NoAvailablePrinter = "NoAvailablePrinter";
+            
+            /// <summary>
+            /// Stores the resource name 'RequestFailed'.
+            /// </summary>
+            public const string RequestFailed = "RequestFailed";
             
             /// <summary>
             /// Stores the resource name 'ResourceKeyFormat'.

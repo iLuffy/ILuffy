@@ -10,11 +10,6 @@ namespace ILuffy.IOP.Printer.Test
         [TestMethod]
         public void TestMethod1()
         {
-            USBPrinter.TestUSBPrinterWriter();
-            //var printer = new USBPrinter(null);
-            var devices = USBPrinter.TestUSBPrinterDirectly();
-
-            Console.WriteLine(devices.Count);
         }
     }
 }

@@ -112,19 +112,34 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ArchitectureNotSupported" xml:space="preserve">
+    <value>Architecture not supported.</value>
+  </data>
   <data name="ArgumentIsNull" xml:space="preserve">
     <value>Argument {0} is null.</value>
   </data>
   <data name="EntryNotFound" xml:space="preserve">
     <value>The entry {0} is not found.</value>
   </data>
+  <data name="FlushLoggerError" xml:space="preserve">
+    <value>There is an error {0}.</value>
+  </data>
   <data name="FormatResourceKeyFailed" xml:space="preserve">
     <value>Format key:{0} with parameters:{1} failed:{2}</value>
+  </data>
+  <data name="IOPConfigIsNotAvailable" xml:space="preserve">
+    <value>Cannot get IOP config from configuration file {0}</value>
+  </data>
+  <data name="NoAvailablePrinter" xml:space="preserve">
+    <value>There is no available printer.</value>
+  </data>
+  <data name="RequestFailed" xml:space="preserve">
+    <value>The http request {0} is failed with {1}. Details:{2}</value>
   </data>
   <data name="ResourceKeyFormat" xml:space="preserve">
     <value>Resource Key:{0}, parameters:</value>

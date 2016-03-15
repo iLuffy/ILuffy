@@ -1,14 +1,14 @@
-﻿using System;
-using System.Globalization;
-using System.IO;
-using System.Runtime.Serialization;
-using System.Text;
-using System.Web.Script.Serialization;
-using System.Xml;
-using System.Xml.Serialization;
-
-namespace ILuffy.IOP
+﻿namespace ILuffy.IOP
 {
+    using System;
+    using System.Globalization;
+    using System.IO;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using System.Web.Script.Serialization;
+    using System.Xml;
+    using System.Xml.Serialization;
+
     /// <summary>
     /// Serializer Helper
     /// </summary>

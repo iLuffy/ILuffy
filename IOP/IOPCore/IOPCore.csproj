@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ILuffy.IOP</RootNamespace>
     <AssemblyName>IOPCore</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
@@ -38,6 +38,22 @@
     <AssemblyOriginatorKeyFile>..\..\Shared\ILuffy.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Castle.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Core.3.3.3\lib\net40-client\Castle.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Castle.Windsor, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Windsor.3.3.0\lib\net40\Castle.Windsor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.5\lib\net40-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.2\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -51,35 +67,67 @@
   <ItemGroup>
     <Compile Include="BaseProperties.cs" />
     <Compile Include="CompilerServices\CallerMemberNameAttribute.cs" />
-    <Compile Include="EncodingStringWriter.cs" />
-    <Compile Include="Extention\InstanceInfoExtension.cs" />
-    <Compile Include="Extention\StringExtention.cs" />
-    <Compile Include="ILuffyConfiguration.csd.cs">
+    <Compile Include="Configuration\IOPConfig.cs" />
+    <Compile Include="Configuration\IOPConfigurationSection.csd.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ILuffyConfiguration.csd</DependentUpon>
+      <DependentUpon>IOPConfigurationSection.csd</DependentUpon>
     </Compile>
+    <Compile Include="EncodingStringWriter.cs" />
+    <Compile Include="Exception\IOPErrorCode.cs" />
+    <Compile Include="Extention\SecureStringExtension.cs" />
+    <Compile Include="Extention\StringExtension.cs" />
+    <Compile Include="Hardware\DeviceProperties.cs" />
+    <Compile Include="Hardware\DeviceUtil.cs" />
     <Compile Include="InstanceInfo.cs" />
+    <Compile Include="Exception\IOPException.cs" />
+    <Compile Include="Ioc\IocContainer.cs" />
+    <Compile Include="Ioc\IocContainerInstaller.cs" />
+    <Compile Include="IOPConstants.cs" />
+    <Compile Include="IOPEnv.cs" />
+    <Compile Include="Logger\Impl\Log4NetImpl.cs" />
+    <Compile Include="Logger\Logger.cs" />
+    <Compile Include="Logger\LoggerMessage.cs" />
+    <Compile Include="Logger\LoggerUtility.cs" />
+    <Compile Include="Logger\Severity.cs" />
+    <Compile Include="Net\IJsonRequest.cs" />
+    <Compile Include="Net\JsonRequest.cs" />
+    <Compile Include="Net\RequestParameters.cs" />
     <Compile Include="Nullable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SerializerHelper.cs" />
+    <Compile Include="Retry\IRetryPolicy.cs" />
+    <Compile Include="Retry\LinearRetry.cs" />
+    <Compile Include="Retry\RetryContext.cs" />
+    <Compile Include="Retry\RetryHelper.cs" />
+    <Compile Include="Serializer\SerializerHelper.cs" />
+    <Compile Include="Win32\Core\GenericAccessRight.cs" />
+    <Compile Include="Win32\Hardware\DIGCF.cs" />
+    <Compile Include="Win32\Hardware\PnPCMAPI.cs" />
+    <Compile Include="Win32\Hardware\SetupAPI.cs" />
+    <Compile Include="Win32\Hardware\SPDRP.cs" />
+    <Compile Include="Win32\Hardware\SP_DEVICE_INTERFACE_DATA.cs" />
+    <Compile Include="Win32\Hardware\SP_DEVICE_INTERFACE_DETAIL_DATA.cs" />
+    <Compile Include="Win32\Hardware\SP_DEVINFO_DATA.cs" />
+    <Compile Include="Win32\Core\KernelAPI.cs" />
+    <Compile Include="Win32\Win32ErrorCode.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ILuffyConfiguration.csd">
+    <None Include="Configuration\IOPConfigurationSection.csd">
       <Generator>CsdFileGenerator</Generator>
-      <LastGenOutput>ILuffyConfiguration.csd.cs</LastGenOutput>
+      <LastGenOutput>IOPConfigurationSection.csd.cs</LastGenOutput>
     </None>
-    <None Include="ILuffyConfiguration.csd.config">
-      <DependentUpon>ILuffyConfiguration.csd</DependentUpon>
+    <None Include="Configuration\IOPConfigurationSection.csd.config">
+      <DependentUpon>IOPConfigurationSection.csd</DependentUpon>
     </None>
-    <None Include="ILuffyConfiguration.csd.diagram">
-      <DependentUpon>ILuffyConfiguration.csd</DependentUpon>
+    <None Include="Configuration\IOPConfigurationSection.csd.diagram">
+      <DependentUpon>IOPConfigurationSection.csd</DependentUpon>
     </None>
-    <None Include="ILuffyConfiguration.csd.xsd">
-      <DependentUpon>ILuffyConfiguration.csd</DependentUpon>
+    <None Include="Configuration\IOPConfigurationSection.csd.xsd">
+      <DependentUpon>IOPConfigurationSection.csd</DependentUpon>
       <SubType>Designer</SubType>
     </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
@@ -90,7 +138,9 @@
       <Name>IOPI18N</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Security\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
