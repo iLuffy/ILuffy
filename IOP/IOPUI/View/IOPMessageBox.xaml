@@ -37,14 +37,16 @@
         <DockPanel Grid.Column="0" Grid.ColumnSpan="5" Grid.Row="0"
                    Background="#0072c6" Height="35"
                    x:Name="header">
-            <ContentPresenter Content="{Binding ElementName=messageBox, Path=Title}"
-                              Margin="10,0,0,0" HorizontalAlignment="Left" DockPanel.Dock="Left"
+            <ContentPresenter Content="{Binding Path=Title, Mode=OneTime}"
+                              Margin="10,0,0,0" HorizontalAlignment="Left" 
+                              DockPanel.Dock="Left"
                               VerticalAlignment="Center" 
                               TextElement.FontFamily="Segoe UI" 
                               TextElement.FontSize="16" 
                               TextElement.Foreground="#ffffff"
                               />
-            <Button Margin="0,0,10,0" HorizontalAlignment="Right" VerticalAlignment="Center"
+            <Button Margin="0,0,10,0" HorizontalAlignment="Right" 
+                    VerticalAlignment="Center" 
                     Cursor="Hand" Width="16" Height="16" DockPanel.Dock="Right" 
                     Background="Transparent" BorderThickness="0"
                     Click="CancelButton_Click">
@@ -61,7 +63,7 @@
 
         <Image Grid.Column="1" Grid.Row="2" Width="32" Height="32" 
                Source="{Binding Path=ImageSource}"/>
-        <TextBox Grid.Column="3" Grid.Row="2" Text="{Binding Path=Message}"
+        <TextBox Grid.Column="3" Grid.Row="2" Text="{Binding Path=Message, Mode=OneTime}"
                  IsReadOnly="True"
                  TextWrapping="Wrap" ScrollViewer.VerticalScrollBarVisibility="Auto"
                  FontFamily="Segoe UI" FontSize="13" Foreground="#333333" 
