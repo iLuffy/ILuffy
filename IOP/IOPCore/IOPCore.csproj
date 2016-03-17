@@ -112,7 +112,9 @@
     <Compile Include="Win32\Win32ErrorCode.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="IOPCore.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="Configuration\IOPConfigurationSection.csd">
       <Generator>CsdFileGenerator</Generator>
       <LastGenOutput>IOPConfigurationSection.csd.cs</LastGenOutput>

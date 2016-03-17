@@ -30,5 +30,22 @@
 
             return plainString;
         }
+
+        public static SecureString ConvertToSecureString(this String plainText)
+        {
+            if(!string.IsNullOrEmpty(plainText))
+            {
+                var secureString = new SecureString();
+
+                foreach(var item in plainText)
+                {
+                    secureString.AppendChar(item);
+                }
+
+                return secureString;
+            }
+
+            return null;
+        }
     }
 }

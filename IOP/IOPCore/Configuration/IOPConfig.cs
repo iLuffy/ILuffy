@@ -16,7 +16,9 @@
                 if (configuration == null)
                 {
                     var configurationFile = Path.Combine(IOPEnv.RootFolder, IOPConstants.IOPConfigurationName);
-                    var exeConfiguration = ConfigurationManager.OpenExeConfiguration(configurationFile);
+                    var exeConfiguration = ConfigurationManager.OpenMappedExeConfiguration(
+                        new ExeConfigurationFileMap() { ExeConfigFilename= configurationFile }, 
+                        ConfigurationUserLevel.None);
 
                     configuration = (IOPConfigurationSection)(exeConfiguration.GetSection(
                         IOPConfigurationSection.IOPConfigurationSectionSectionPath));

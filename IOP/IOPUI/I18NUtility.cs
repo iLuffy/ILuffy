@@ -29,7 +29,7 @@ namespace ILuffy.IOP.UI
             }
             else
             {
-                if (objs != null)
+                if (objs != null && objs.Length > 0)
                 {
                     try
                     {
