@@ -46,7 +46,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IPrinter.cs" />
+    <Compile Include="PrinterFactory.cs" />
     <Compile Include="PrinterParameter.cs" />
+    <Compile Include="PrinterType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="USB\USBPrinter.cs" />
   </ItemGroup>

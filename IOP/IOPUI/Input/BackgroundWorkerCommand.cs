@@ -4,7 +4,7 @@
     using System.ComponentModel;
     using System.Diagnostics;
     using System.Windows.Input;
-
+    using I18N;
     public class BackgroundWorkerCommand : BackgroundWorker, ICommand
     {
         #region Fields 
@@ -25,11 +25,27 @@
                 throw new ArgumentNullException("execute");
             }
             DoWork += execute;
+            RunWorkerCompleted += RunWorkerCompletedTrack;
             this.canExecute = canExecute;
         }
 
         #endregion
         // Constructors 
+
+        private void RunWorkerCompletedTrack(object sender, RunWorkerCompletedEventArgs e)
+        {
+            if (e.Error != null || e.Cancelled)
+            {
+                LoggerUtility.WriteMessage(Severity.Debug,
+                    CoreRS.TraceBackgroundJobCompletedFormat(e.Cancelled, null, e.Error));
+            }
+            else
+            {
+                LoggerUtility.WriteMessage(Severity.Debug,
+                    CoreRS.TraceBackgroundJobCompletedFormat(e.Cancelled, e.Result, e.Error));
+            }
+        }
+
 
         #region ICommand Members 
 

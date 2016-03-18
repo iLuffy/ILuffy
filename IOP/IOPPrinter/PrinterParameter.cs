@@ -1,12 +1,12 @@
-﻿using System.Text;
-
-namespace ILuffy.IOP.Printer
+﻿namespace ILuffy.IOP.Printer
 {
     /// <summary>
     /// Parameter
     /// </summary>
-    public class PrinterParameter : InstanceInfo
+    public class PrinterParameter : BaseProperties
     {
+        public PrinterType Type { get; set; }
+
         public string EncodingName { get; set; }
     }
 }

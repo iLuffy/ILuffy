@@ -150,6 +150,15 @@ namespace ILuffy.IOP.I18N {
         }
         
         /// <summary>
+        /// Looks up a localized string similar to 'This printer {0} is not supported.'.
+        /// </summary>
+        public static string PrinterNotSupport {
+            get {
+                return ResourceManager.GetString(ResourceNames.PrinterNotSupport, _resourceCulture);
+            }
+        }
+        
+        /// <summary>
         /// Looks up a localized string similar to 'The http request {0} is failed with {1}. Details:{2}'.
         /// </summary>
         public static string RequestFailed {
@@ -164,6 +173,15 @@ namespace ILuffy.IOP.I18N {
         public static string ResourceKeyFormat {
             get {
                 return ResourceManager.GetString(ResourceNames.ResourceKeyFormat, _resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Looks up a localized string similar to 'Cancelled:{0}, Result:{1}, Exception:{2}'.
+        /// </summary>
+        public static string TraceBackgroundJobCompleted {
+            get {
+                return ResourceManager.GetString(ResourceNames.TraceBackgroundJobCompleted, _resourceCulture);
             }
         }
         
@@ -224,6 +242,15 @@ namespace ILuffy.IOP.I18N {
         }
         
         /// <summary>
+        /// Formats a localized string similar to 'This printer {0} is not supported.'.
+        /// </summary>
+        /// <param name="arg0">An object (0) to format.</param>
+        /// <returns>A copy of format string in which the format items have been replaced by the String equivalent of the corresponding instances of Object in arguments.</returns>
+        public static string PrinterNotSupportFormat(object arg0) {
+            return string.Format(_resourceCulture, PrinterNotSupport, arg0);
+        }
+        
+        /// <summary>
         /// Formats a localized string similar to 'The http request {0} is failed with {1}. Details:{2}'.
         /// </summary>
         /// <param name="arg0">An object (0) to format.</param>
@@ -241,6 +268,17 @@ namespace ILuffy.IOP.I18N {
         /// <returns>A copy of format string in which the format items have been replaced by the String equivalent of the corresponding instances of Object in arguments.</returns>
         public static string ResourceKeyFormatFormat(object arg0) {
             return string.Format(_resourceCulture, ResourceKeyFormat, arg0);
+        }
+        
+        /// <summary>
+        /// Formats a localized string similar to 'Cancelled:{0}, Result:{1}, Exception:{2}'.
+        /// </summary>
+        /// <param name="arg0">An object (0) to format.</param>
+        /// <param name="arg1">An object (1) to format.</param>
+        /// <param name="arg2">An object (2) to format.</param>
+        /// <returns>A copy of format string in which the format items have been replaced by the String equivalent of the corresponding instances of Object in arguments.</returns>
+        public static string TraceBackgroundJobCompletedFormat(object arg0, object arg1, object arg2) {
+            return string.Format(_resourceCulture, TraceBackgroundJobCompleted, arg0, arg1, arg2);
         }
         
         /// <summary>
@@ -293,6 +331,11 @@ namespace ILuffy.IOP.I18N {
             public const string NoAvailablePrinter = "NoAvailablePrinter";
             
             /// <summary>
+            /// Stores the resource name 'PrinterNotSupport'.
+            /// </summary>
+            public const string PrinterNotSupport = "PrinterNotSupport";
+            
+            /// <summary>
             /// Stores the resource name 'RequestFailed'.
             /// </summary>
             public const string RequestFailed = "RequestFailed";
@@ -301,6 +344,11 @@ namespace ILuffy.IOP.I18N {
             /// Stores the resource name 'ResourceKeyFormat'.
             /// </summary>
             public const string ResourceKeyFormat = "ResourceKeyFormat";
+            
+            /// <summary>
+            /// Stores the resource name 'TraceBackgroundJobCompleted'.
+            /// </summary>
+            public const string TraceBackgroundJobCompleted = "TraceBackgroundJobCompleted";
             
             /// <summary>
             /// Stores the resource name 'TypeFullNameIsEmpty'.

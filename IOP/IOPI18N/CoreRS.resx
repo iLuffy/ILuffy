@@ -138,11 +138,17 @@
   <data name="NoAvailablePrinter" xml:space="preserve">
     <value>There is no available printer.</value>
   </data>
+  <data name="PrinterNotSupport" xml:space="preserve">
+    <value>This printer {0} is not supported.</value>
+  </data>
   <data name="RequestFailed" xml:space="preserve">
     <value>The http request {0} is failed with {1}. Details:{2}</value>
   </data>
   <data name="ResourceKeyFormat" xml:space="preserve">
     <value>Resource Key:{0}, parameters:</value>
+  </data>
+  <data name="TraceBackgroundJobCompleted" xml:space="preserve">
+    <value>Cancelled:{0}, Result:{1}, Exception:{2}</value>
   </data>
   <data name="TypeFullNameIsEmpty" xml:space="preserve">
     <value>The type full name of {0} is empty.</value>
