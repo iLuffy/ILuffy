@@ -110,15 +110,24 @@
             var logger = Logger;
             if (logger != null && logger.CurrentSeverity <= severity)
             {
-                var message = new LoggerMessage(severity, Thread.CurrentThread.ManagedThreadId, Thread.CurrentThread.Name, string.Format(format, objs));
+                var message = format;
+
+                if (objs != null && objs.Length > 0)
+                {
+                    message = string.Format(format, objs);
+                }
+
+                var loggerMessage = new LoggerMessage(severity, 
+                    Thread.CurrentThread.ManagedThreadId, 
+                    Thread.CurrentThread.Name, message);
 
                 if (IOPConfig.Configuration.Logger.IsMultipleThreadEnabled)
                 {
-                    AddMessage(message);
+                    AddMessage(loggerMessage);
                 }
                 else
                 {
-                    logger.WriteMessage(message);
+                    logger.WriteMessage(loggerMessage);
                 }
 
                 return true;

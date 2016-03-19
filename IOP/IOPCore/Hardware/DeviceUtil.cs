@@ -192,7 +192,7 @@
                     {
                         var errorCode = Marshal.GetLastWin32Error();
 
-                        if (errorCode != 0)
+                        if (errorCode != Win32ErrorCode.ERROR_NO_MORE_ITEMS)
                         {
                             throw new Win32Exception(errorCode);
                         }
@@ -218,7 +218,7 @@
                         {
                             var errorCode = Marshal.GetLastWin32Error();
 
-                            if (errorCode != 0)
+                            if (errorCode != Win32ErrorCode.ERROR_NO_MORE_ITEMS)
                             {
                                 throw new Win32Exception(errorCode);
                             }
@@ -288,7 +288,7 @@
                 {
                     var errorCode = Marshal.GetLastWin32Error();
 
-                    if (errorCode != 0)
+                    if (errorCode != Win32ErrorCode.ERROR_NO_MORE_ITEMS)
                     {
                         throw new Win32Exception(errorCode);
                     }

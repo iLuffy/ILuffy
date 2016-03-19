@@ -65,6 +65,40 @@
             }
         }
 
+        public void ChangeAlignment(AlignmentType type)
+        {
+            switch(type)
+            {
+                case AlignmentType.Left:
+                    fileStream.WriteByte(27);
+                    fileStream.WriteByte(97);
+                    fileStream.WriteByte(48);
+                    break;
+                case AlignmentType.Center:
+                    fileStream.WriteByte(27);
+                    fileStream.WriteByte(97);
+                    fileStream.WriteByte(49);
+                    break;
+                case AlignmentType.Right:
+                    fileStream.WriteByte(27);
+                    fileStream.WriteByte(97);
+                    fileStream.WriteByte(50);
+                    break;
+            }
+        }
+
+        public void Write(string content)
+        {
+            Assert();
+            var bytes = encoding.GetBytes(content);
+            fileStream.Write(bytes, 0, bytes.Length);
+        }
+
+        public void Write(string format, params object[] args)
+        {
+            Write(string.Format(format, args));
+        }
+
         public void WriteLine(string format, params object[] args)
         {
             WriteLine(string.Format(format, args));
@@ -76,11 +110,9 @@
             fileStream.WriteByte(10);
         }
 
-        public void WriteLine(string line)
+        public void WriteLine(string content)
         {
-            Assert();
-            var bytes = encoding.GetBytes(line);
-            fileStream.Write(bytes, 0, bytes.Length);
+            Write(content);
             WriteLine();
         }
 
@@ -95,11 +127,24 @@
             fileStream.Flush();
         }
 
-        
-
         public void Dispose()
         {
             Release();
+        }
+
+        public void ChangeLeading(byte multiple)
+        {
+            Assert();
+            fileStream.WriteByte(27);
+            fileStream.WriteByte(51);
+            fileStream.WriteByte(multiple);
+        }
+
+        public void ResetLeading()
+        {
+            Assert();
+            fileStream.WriteByte(27);
+            fileStream.WriteByte(50);
         }
     }
 }

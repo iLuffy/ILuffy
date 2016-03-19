@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlignmentType.cs" />
     <Compile Include="IPrinter.cs" />
     <Compile Include="PrinterFactory.cs" />
     <Compile Include="PrinterParameter.cs" />

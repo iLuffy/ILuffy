@@ -30,7 +30,8 @@
                 request.CookieContainer = new CookieContainer();
                 foreach (var item in parameter.Cookie)
                 {
-                    request.CookieContainer.Add(new Cookie(item.Key, item.Value));
+                    request.CookieContainer.Add(new Cookie(item.Key, item.Value, null, 
+                        request.RequestUri.Authority));
                 }
             }
 
@@ -52,7 +53,15 @@
 
                 using (StreamReader reader = new StreamReader(response.GetResponseStream()))
                 {
-                    return JsonConvert.DeserializeObject<T>(reader.ReadToEnd());
+                    var json = reader.ReadToEnd();
+                    var jsonSettings = new JsonSerializerSettings()
+                    {
+                        Error = (sender, e) => { throw e.ErrorContext.Error; }
+                    };
+
+                    var obj = JsonConvert.DeserializeObject<T>(json, jsonSettings);
+
+                    return obj;
                 }
             }
         }
